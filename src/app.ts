@@ -28,3 +28,5 @@ server.listen(port, () => {
 });
 
 startWebSocketServer(server);
+
+export default app;

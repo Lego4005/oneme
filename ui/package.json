@@ -1,8 +1,4 @@
 {
-  "name": "perplexica-frontend",
-  "version": "1.7.0",
-  "license": "MIT",
-  "author": "ItzCrazyKns",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
