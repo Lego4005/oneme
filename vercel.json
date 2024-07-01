@@ -2,22 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/app.ts",
+      "src": "api/src/app.ts",
       "use": "@vercel/node"
     },
     {
-      "src": "ui/next.config.js",
+      "src": "frontend/next.config.js",
       "use": "@vercel/next"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/src/app.ts"
+      "dest": "/api/src/app.ts"
     },
     {
       "src": "/(.*)",
-      "dest": "/ui/$1"
+      "dest": "/frontend/$1"
     }
   ]
 }
